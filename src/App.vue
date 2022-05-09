@@ -1,9 +1,26 @@
-<template><h1>Composants de GoMatch.fr :</h1></template>
+<template>
+  <div class="grey-2">
+    <h1>
+      Composants de GoMatch.fr : <br />
+      <br />
+    </h1>
+
+    <header1 />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti incidunt
+      voluptates ab, laboriosam eum et illum tenetur ducimus. Iste labore iure
+      assumenda quisquam. Delectus voluptatem, quasi expedita incidunt aliquam
+      tempora.
+    </p>
+  </div>
+</template>
 
 
 <script >
+import header1 from "./components/header.vue";
+
 export default {
   name: "App",
-  components: {},
+  components: { header1 },
 };
 </script>
