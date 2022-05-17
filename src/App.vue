@@ -13,6 +13,8 @@
       tempora.
     </p>
 
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 place-items-stretch place-self-center">
+
     <cardteam
       name="Théo Pasquarelli"
       poste="Directeur Design"
@@ -36,6 +38,8 @@
       instagram="https://www.instagram.com/eliot_feuvrier/"
       linkedin="https://www.linkedin.com/in/eliot-feuvrier-796551224/"
     />
+
+    </div>
 
     <footer1 />
   </div>

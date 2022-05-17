@@ -34,19 +34,6 @@ module.exports = {
        "impact": "Impact",
        "open-sans": "Open Sans"
       },
-      "borderRadius": {
-       "none": "0",
-       "xs": "0.1875rem",
-       "sm": "0.3125rem",
-       "default": "0.375rem",
-       "lg": "0.4375rem",
-       "xl": "0.5rem",
-       "2xl": "0.625rem",
-       "3xl": "0.75rem",
-       "4xl": "1.4375rem",
-       "5xl": "2.1875rem",
-       "6xl": "4.34375rem"
-      }
      }
      
   },
