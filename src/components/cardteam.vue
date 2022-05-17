@@ -18,16 +18,19 @@
         </h2>
         <ul class="social_icons">
           <li>
-            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a target="_blank" :href="instagram"
+              ><i class="fa fa-instagram" aria-hidden="true"></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+            <a target="_blank" :href="linkedin"
+              ><i class="fa fa-linkedin" aria-hidden="true"></i>{{}}</a
+            >
           </li>
-          <li>
-            <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <li v-if="!!github">
+            <a target="_blank" :href="github"
+              ><i class="fa fa-github" aria-hidden="true"></i
+            ></a>
           </li>
         </ul>
       </div>
@@ -47,6 +50,15 @@ export default {
       default: "Poste de la personne",
     },
     img: {
+      type: String,
+    },
+    instagram: {
+      type: String,
+    },
+    linkedin: {
+      type: String,
+    },
+    github: {
       type: String,
     },
   },

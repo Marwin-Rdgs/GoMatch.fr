@@ -13,19 +13,20 @@
       tempora.
     </p>
 
-    <card_team
+    <cardteam
       name="Théo Pasquarelli"
       poste="Directeur Design"
       img="/public/img_team/théo.JPG"
+      instagram="https://www.instagram.com/theopasqua_/"
     />
 
-    <card_team
+    <cardteam
       name="Marwin Rodrigues"
       poste="Directeur Développement"
       img="/public/img_team/marwin.JPG"
+      github="https://github.com/Marwin-Rdgs"
     />
-
-    <card_team
+    <cardteam
       name="Eliot Feuvrier"
       poste="Directeur Communication"
       img="/public/img_team/Eliot.PNG"
@@ -39,10 +40,10 @@
 <script >
 import header1 from "./components/header.vue";
 import footer1 from "./components/footer.vue";
-import card_team from "./components/card_team.vue";
+import cardteam from "./components/cardteam.vue";
 
 export default {
   name: "App",
-  components: { header1, footer1, card_team },
+  components: { header1, footer1, cardteam },
 };
 </script>
