@@ -1,13 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-/* Provisoir */
-.grey-2 {
-    background: #EEF0F4;
-}
-
-.footer_turquoise {
-    background: #088E8E;
-}

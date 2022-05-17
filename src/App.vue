@@ -41,6 +41,9 @@
 
     </div>
 
+
+    <sportindex />
+
     <footer1 />
   </div>
 </template>
@@ -49,10 +52,12 @@
 <script >
 import header1 from "./components/header.vue";
 import footer1 from "./components/footer.vue";
+
 import cardteam from "./components/cardteam.vue";
+import sportindex from "./components/sportindex.vue"
 
 export default {
   name: "App",
-  components: { header1, footer1, cardteam },
+  components: { sportindex, header1, footer1, cardteam },
 };
 </script>

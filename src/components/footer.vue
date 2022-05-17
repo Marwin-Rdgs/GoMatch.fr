@@ -1,6 +1,6 @@
 <template>
   <div class="w-full bg-black text-white">
-    <div class="pt-7 footer_turquoise"></div>
+    <div class="pt-7 bg-turquoise"></div>
 
     <div class="flex ml-10 w-full">
       <div class="flex-col w-1/2 pb-7">
