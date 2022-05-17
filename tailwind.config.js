@@ -6,15 +6,49 @@ module.exports = {
   theme: {
     extend: {
       "colors": {
-        "purple-tonic": "#7c35d7",
-        "indigo": {
-          "25": "#f6f8ff"
-        }
+       "green": "#107d0d",
+       "blue": "#175b88",
+       "turquoise": "#088e8e",
+       "grey": "#f4f4f4",
+       "grey_2": "#eef0f4",
+       "grey_white": "#fafafa",
+       "dark-blue": "#0f3c58"
+      },
+      "fontSize": {
+       "4xs": "0.6875rem",
+       "3xs": "0.875rem",
+       "2xs": "0.9375rem",
+       "xs": "1rem",
+       "sm": "1.375rem",
+       "base": "1.5rem",
+       "lg": "1.5625rem",
+       "xl": "1.875rem",
+       "2xl": "2.1875rem",
+       "3xl": "2.8125rem",
+       "4xl": "3.125rem",
+       "5xl": "4.0625rem",
+       "6xl": "5.3125rem",
+       "7xl": "6.875rem"
       },
       "fontFamily": {
-        "inter": "Inter"
+       "impact": "Impact",
+       "open-sans": "Open Sans"
       },
-    },
+      "borderRadius": {
+       "none": "0",
+       "xs": "0.1875rem",
+       "sm": "0.3125rem",
+       "default": "0.375rem",
+       "lg": "0.4375rem",
+       "xl": "0.5rem",
+       "2xl": "0.625rem",
+       "3xl": "0.75rem",
+       "4xl": "1.4375rem",
+       "5xl": "2.1875rem",
+       "6xl": "4.34375rem"
+      }
+     }
+     
   },
   plugins: [],
 }
