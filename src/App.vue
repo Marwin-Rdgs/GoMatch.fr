@@ -42,7 +42,26 @@
     </div>
 
 
-    <sportindex />
+    <sportindex 
+    type="foot"
+    txt="Football"
+    url="#" />
+
+    <sportindex 
+    type="petanque"
+    txt="Pétanque"
+    url="#" />
+
+    <sportindex 
+    type="bascket"
+    txt="Bascketball"
+    url="#" />
+
+    <sportindex 
+    type="tennis"
+    txt="Tennisball"
+    url="#" />
+
 
     <footer1 />
   </div>

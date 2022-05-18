@@ -1,18 +1,13 @@
 <template>
-
-    <!-- A DEMANDER A PRACHT = 1 PROPS = 1 BALISE (foot) -->
-    <a href="#">
+  <a :href="url">
     <div class="flex justify-center">
-    <div class="grid grid-cols-1">
-    <foot class="flex hover:scale-50"/>
-    <p class="text-center">Foot</p>
+      <div class="grid grid-cols-1 group h-16  relative">
+        <component :is="types[type]" class="flex  group-hover:scale-50 h-16 w-16 transition-transform  duration-1000" />
+        <p class="text-center opacity-0 group-hover:opacity-100 absolute bottom-0 w-16 transition-opacity duration-1000 ">{{txt}}</p>
+      </div>
     </div>
-    </div>
-    <a>
-    
-    <br><br><br><br><br><br>
+  </a>
 
-    
 </template>
 
 <script >
@@ -22,6 +17,25 @@ import bascket from "./icones/perso_basket.vue";
 import tennis from "./icones/perso_tennis.vue";
 
 export default {
-  components: { foot, petanque, bascket, tennis},
+  props: {
+      url: {
+      type: String,
+    },
+    txt: {
+      type: String,
+    },
+    type:String,
+  },
+  data: function() {
+    return {
+      types: {
+        "foot":foot, 
+        petanque,
+        bascket ,
+        tennis  ,
+      }
+    }
+  },
+  components: { foot, petanque, bascket, tennis },
 };
 </script>
