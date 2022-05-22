@@ -1,17 +1,11 @@
-<script setup>
-import { RouterLink, RouterView } from "vue-router";
-</script>
-
 <template>
   <div class="bg-grey">
-    <h1>
-      Composants de GoMatch.fr : <br />
-      <br />
-    </h1>
 
     <header1 />
 
-    <RouterLink to="/components">Home</RouterLink>
+    <RouterLink to="/components">Liste des composants</RouterLink>
+    <RouterLink to="/">Home</RouterLink>
+    
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti incidunt
       voluptates ab, laboriosam eum et illum tenetur ducimus. Iste labore iure
@@ -20,10 +14,14 @@ import { RouterLink, RouterView } from "vue-router";
     </p>
   </div>
   <footer1 />
+
+
+<RouterView />
 </template>
 
 
-<script >
+<script>
+import { RouterLink, RouterView } from "vue-router";
 import header1 from "./components/header.vue";
 import footer1 from "./components/footer.vue";
 

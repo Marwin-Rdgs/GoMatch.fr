@@ -8,8 +8,8 @@
         <p>➤ À propos</p>
         <p>➤ Contact</p>
       </div>
-      <div class="flex-col place-items-end">
-        <h3 class="mb-2 contents">Nous suivre :</h3>
+      <div class="flex-col ml-auto">
+        <h3 class="mb-2">Nous suivre :</h3>
         <div class="flex flex-auto">
           <a href="#"><img src="./icones/footer_facebook.png" alt="" /></a>
           <a href="#"

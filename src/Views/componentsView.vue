@@ -54,7 +54,7 @@ import cardteam from "../components/cardteam.vue";
 import sportindex from "../components/sportindex.vue"
 
 export default {
-  name: "App",
+  name: "componentsView",
   components: { sportindex, cardteam },
 };
 </script>
