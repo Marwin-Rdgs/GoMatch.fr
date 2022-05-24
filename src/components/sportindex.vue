@@ -2,9 +2,9 @@
 
   <a :href="url">
     <div class="flex justify-center">
-      <div class="grid grid-cols-1 group h-16  relative">
-        <component :is="types[type]" class="flex  group-hover:scale-50 h-16 w-16 transition-transform  duration-1000" />
-        <p class="text-center opacity-0 group-hover:opacity-100 absolute bottom-0 w-16 transition-opacity duration-1000 ">{{txt}}</p>
+      <div class="grid grid-cols-1 group h-32  relative">
+        <component :is="types[type]" class="flex  group-hover:scale-50 h-32 w-32 transition-transform  duration-1000" />
+        <p class="text-center opacity-0 group-hover:opacity-100 absolute bottom-0 w-32 transition-opacity duration-1000 ">{{txt}}</p>
       </div>
     </div>
   </a>

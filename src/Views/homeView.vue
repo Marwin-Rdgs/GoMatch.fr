@@ -1,6 +1,9 @@
 <script>
+import sportindex from "../components/sportindex.vue"
+
 export default {
   name: "homeView",
+  components: { sportindex }
 };
 
 /*!
@@ -112,9 +115,40 @@ window.addEventListener('DOMContentLoaded', event => {
                 <a href=#down><img src="../components/icones/arrow_down.svg" alt="Icône descendre" class="arrow_down"></a>
             </div>
         </div>
+
+            <sportindex 
+    type="foot"
+    txt="Football"
+    url="#" />
+
+    <hr class="w-1/6 m-auto"/>
+
+    <sportindex 
+    type="petanque"
+    txt="Pétanque"
+    url="#" />
+
+    <hr class="w-1/6 m-auto">
+
+    <sportindex 
+    type="bascket"
+    txt="Basketball"
+    url="#" />
+
+    <hr class="w-1/6 m-auto">
+
+    <sportindex 
+    type="tennis"
+    txt="Tennisball"
+    url="#" />
+
+
 </template>
 
 <style scoped>
+
+hr { color:#6B7280; background-color:#6B7280; height:3px; border:0; }
+
 @media (min-width: 1000px) {
 
 .first_header {
