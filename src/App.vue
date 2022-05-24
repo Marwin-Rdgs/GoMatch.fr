@@ -4,7 +4,13 @@
     <header1 />
 
     <RouterLink to="/components">Liste des composants</RouterLink> |
-    <RouterLink to="/">Home</RouterLink>
+    <RouterLink to="/"> Home</RouterLink> |
+    <RouterLink to="/mentionslegales"> Mentions Legales</RouterLink> |
+    <RouterLink to="/apropos"> À propos</RouterLink> |
+    <RouterLink to="/contact"> Contact </RouterLink> |
+    <RouterLink to="/profil"> Profil </RouterLink> |
+    <RouterLink to="/profil"> Sport (pas définie) </RouterLink> |
+    <RouterLink to="/profil"> Party (pas définie) </RouterLink> |
 
     <RouterView />
     

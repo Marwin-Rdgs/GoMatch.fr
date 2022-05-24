@@ -14,7 +14,7 @@
 
             <img src="/public/img/CAPTCHA.jpg">
 
-            <button class="rounded-md bg-[#088e8e] text-sm text-white w-1/2"> <span class="text-center">Envoyer</span></button>
+            <button class="rounded-md bg-[#088e8e] text-sm text-white w-1/2 mb-24"> <span class="text-center">Envoyer</span></button>
             
         </form>
 

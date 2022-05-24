@@ -5,8 +5,8 @@
     <div class="flex ml-10">
       <div class="text-4xs flex-col w-1/2 pb-7">
         <h3 class="mb-2">Menu :</h3>
-        <p>➤ À propos</p>
-        <p>➤ Contact</p>
+        <p><RouterLink to="/apropos"> ➤ À propos</RouterLink></p>
+        <p><RouterLink to="/contact"> ➤ Contact</RouterLink></p>
       </div>
       <div class="text-4xs flex-col ml-auto mr-4">
         <h3 class="mb-2">Nous suivre :</h3>
@@ -23,7 +23,11 @@
       </div>
     </div>
     <div class="text-4xs text-center flex-none">
-    <p>Mentions légales</p>
+        <RouterLink to="/mentionslegales"> Mentions Légales</RouterLink>
     </div>
   </div>
 </template>
+
+<script>
+import { RouterLink, RouterView } from "vue-router";
+</script>
