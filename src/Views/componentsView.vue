@@ -47,14 +47,18 @@
     type="tennis"
     txt="Tennisball"
     url="#" />
+
+  <formulaire />
+
 </template>
 
 <script >
 import cardteam from "../components/cardteam.vue";
 import sportindex from "../components/sportindex.vue"
+import formulaire from "../components/forms.vue"
 
 export default {
   name: "componentsView",
-  components: { sportindex, cardteam },
+  components: { sportindex, cardteam, formulaire },
 };
 </script>
