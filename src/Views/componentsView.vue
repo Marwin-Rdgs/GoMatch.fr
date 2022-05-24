@@ -25,6 +25,8 @@
       linkedin="https://www.linkedin.com/in/eliot-feuvrier-796551224/"
     />
 
+    <cardterrains />
+
     </div>
 
 
@@ -54,11 +56,12 @@
 
 <script >
 import cardteam from "../components/cardteam.vue";
+import cardterrains from "../components/cardterrains.vue";
 import sportindex from "../components/sportindex.vue"
 import formulaire from "../components/forms.vue"
 
 export default {
   name: "componentsView",
-  components: { sportindex, cardteam, formulaire },
+  components: { sportindex, cardteam, formulaire, cardterrains },
 };
 </script>
