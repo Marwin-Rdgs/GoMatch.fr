@@ -3,20 +3,15 @@
 
     <header1 />
 
-    <RouterLink to="/components">Liste des composants</RouterLink>
+    <RouterLink to="/components">Liste des composants</RouterLink> |
     <RouterLink to="/">Home</RouterLink>
+
+    <RouterView />
     
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti incidunt
-      voluptates ab, laboriosam eum et illum tenetur ducimus. Iste labore iure
-      assumenda quisquam. Delectus voluptatem, quasi expedita incidunt aliquam
-      tempora.
-    </p>
+
   </div>
-  <footer1 />
 
-
-<RouterView />
+<footer1/>
 </template>
 
 

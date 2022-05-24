@@ -72,7 +72,7 @@ export default {
   position: relative;
   width: 300px;
   height: 400px;
-  background: linear-gradient(#088e8e, #188e8e 30%, #1d3548 30%, #1d3548);
+  background: linear-gradient(#000000, #000000 30%, #088E8E 30%, #088E8E);
   margin: 10px;
   border-radius: 20px;
   overflow: hidden;
@@ -141,7 +141,7 @@ export default {
 .cards .content .details h2 span {
   font-size: 1;
   font-weight: 400;
-  color: #2196f3;
+  color: #fff;
 }
 
 .social_icons {
