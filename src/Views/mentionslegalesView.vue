@@ -1,6 +1,6 @@
 <template>
 
-<p class="text-3xl font-bold text-justify  text-black">Mentions légales</p>
+<p class="text-xl font-bold text-justify  text-black">Mentions légales</p>
 <svg
   width="94"
   height="1"
