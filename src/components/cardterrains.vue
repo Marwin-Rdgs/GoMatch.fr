@@ -1,4 +1,5 @@
 <template>
+  <a :href="url">
   <figure class="m-4">
     <img class="w-full rounded-t-lg" :src="img" alt="" />
     <figcaption
@@ -22,11 +23,12 @@
           w-12
         "
       >
-        <joueur :class="{ 'fill-white': joueur == false }" />
+        <joueur :class="{ 'fill-white': joueur }" />
       </div>
     </figcaption>
   </figure>
-</template>
+  </a>
+</template>  
 
 <script>
 import joueur from '../components/icones/joueur_icone.vue'
@@ -37,7 +39,6 @@ export default {
   props: {
     joueur: {
       type: Boolean,
-      default: false,
     },
     nom: {
       type: String,
@@ -54,6 +55,10 @@ export default {
       type: String,
       default: "6x7.5 m²",
     },
+    url: {
+      type: String,
+      default: "/",
+    }
   },
 };
 </script>

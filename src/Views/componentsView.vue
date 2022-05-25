@@ -26,14 +26,14 @@
     />
 
     <cardterrains 
-    joueur= true
+    joueur= "true"
     nom="test terrain 1"
     adress="18 rue Pasquarelli"
     size="Football...(à modifier)"
     img="/public/terrains/city_hericourt.jpg"/>
 
     <cardterrains 
-    joueur= false
+    joueur= "false"
     nom="test terrain 2"
     adress="18 rue Feuvrier de merde"
     size="Basket...(à modifier)"
