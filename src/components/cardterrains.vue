@@ -23,7 +23,8 @@
           w-12
         "
       >
-        <joueur :class="{ 'fill-white': joueur }" />
+      <!-- Rajouter un texte = nombre de joueur -->
+        <statut :class="{ 'fill-white': statut }" />
       </div>
     </figcaption>
   </figure>
@@ -31,13 +32,13 @@
 </template>  
 
 <script>
-import joueur from '../components/icones/joueur_icone.vue'
+import statut from '../components/icones/joueur_icone.vue'
 
 export default {
-  components: { joueur },
+  components: { statut },
 
   props: {
-    joueur: {
+    statut: {
       type: Boolean,
     },
     nom: {

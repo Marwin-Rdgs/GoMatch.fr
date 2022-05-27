@@ -25,15 +25,17 @@
       linkedin="https://www.linkedin.com/in/eliot-feuvrier-796551224/"
     />
 
-    <cardterrains 
-    joueur= "true"
+<!-- statut = False, le terrains est déjà utilisé -->
+    <cardterrains
+    statut= false
     nom="test terrain 1"
     adress="18 rue Pasquarelli"
     size="Football...(à modifier)"
     img="/public/terrains/city_hericourt.jpg"/>
 
+
+<!-- statut n'est pas indiqué, alors le terrains n'est pas occupé -->
     <cardterrains 
-    joueur= "false"
     nom="test terrain 2"
     adress="18 rue Feuvrier de merde"
     size="Basket...(à modifier)"
