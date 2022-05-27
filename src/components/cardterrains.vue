@@ -23,7 +23,6 @@
           w-12
         "
       >
-      <!-- Rajouter un texte = nombre de joueur -->
         <p>{{ joueur }}</p>
         <statut :class="{ 'fill-white': !statut }" />
       </div>

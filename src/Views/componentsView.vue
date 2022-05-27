@@ -59,7 +59,7 @@
 
     <sportindex 
     type="bascket"
-    txt="Bascketball"
+    txt="Basketball"
     url="#" />
 
     <sportindex 
