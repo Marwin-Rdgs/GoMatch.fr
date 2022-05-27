@@ -11,14 +11,9 @@
       <div class="text-4xs flex-col ml-auto mr-4">
         <h3 class="mb-2">Nous suivre :</h3>
         <div class="flex">
-          <a href="#"><img src="./icones/footer_facebook.png" alt="" /></a>
-          <a href="#"
-            ><img src="./icones/footer_instagram.png" alt="" class="ml-2"
-          /></a>
-          <a href="#"
-            ><img src="./icones/footer_twitter.png" alt="" class="ml-2"
-          /></a>
-          
+          <a href="https://www.facebook.com/profile.php?id=100081485447397" target="_blank"><img src="./icones/footer_facebook.png" alt="" /></a>
+          <a href="https://www.instagram.com/gomatch.contact/" target="_blank"><img src="./icones/footer_instagram.png" alt="" class="ml-2"/></a>
+          <a href="https://twitter.com/GoMatch_contact" target="_blank"><img src="./icones/footer_twitter.png" alt="" class="ml-2"/></a>
         </div>
       </div>
     </div>

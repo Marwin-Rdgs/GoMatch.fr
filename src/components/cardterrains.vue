@@ -24,7 +24,8 @@
         "
       >
       <!-- Rajouter un texte = nombre de joueur -->
-        <statut :class="{ 'fill-white': statut }" />
+        <p>{{ joueur }}</p>
+        <statut :class="{ 'fill-white': !statut }" />
       </div>
     </figcaption>
   </figure>
@@ -40,6 +41,10 @@ export default {
   props: {
     statut: {
       type: Boolean,
+    },
+    joueur: {
+      type: Number,
+      default: 0,
     },
     nom: {
       type: String,

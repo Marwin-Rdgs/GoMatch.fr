@@ -25,9 +25,11 @@
       linkedin="https://www.linkedin.com/in/eliot-feuvrier-796551224/"
     />
 
-<!-- statut = False, le terrains est déjà utilisé -->
+<!-- statut est présent, le terrains est déjà utilisé -->
+<!-- Joueur est indiqué, alors il y a X joueur sur le terrain -->
     <cardterrains
-    statut= false
+    statut
+    joueur= 3
     nom="test terrain 1"
     adress="18 rue Pasquarelli"
     size="Football...(à modifier)"
@@ -35,6 +37,7 @@
 
 
 <!-- statut n'est pas indiqué, alors le terrains n'est pas occupé -->
+<!-- Joueur n'est pas indiqué, alors il n'y a 0 joueurs sur le terrains -->
     <cardterrains 
     nom="test terrain 2"
     adress="18 rue Feuvrier de merde"
