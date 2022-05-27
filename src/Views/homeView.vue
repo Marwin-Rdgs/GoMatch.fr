@@ -123,6 +123,7 @@ export default {
                 <a href=#down><img src="../components/icones/arrow_down.svg" alt="Icône descendre" class="arrow_down py-9"></a>
             </div>
         </div>
+        <p class="text-center font-bold text-xs font-Open Sans">Choisissez votre sport : </p>
 
             <sportindex 
     type="foot"

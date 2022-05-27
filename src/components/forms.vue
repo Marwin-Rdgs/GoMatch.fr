@@ -10,11 +10,15 @@
 
             <input type="text" placeholder="Email" class="rounded-md bg-white text-sm text-justify text-gray-500 mt-4">
 
-            <textarea name="" class="mt-4 rounded-md bg-white text-sm text-gray-500 h-1/3"> Message </textarea>
+             <input type="text" placeholder="Message" class="rounded-md bg-white text-sm h-1/4 text-justify text-gray-500 mt-4 h-">
+
+           
+
+            <textarea name="" class="mt-4 rounded-md bg-white text-sm text-gray-500 h-1/4"> Message </textarea>
 
             <img src="/public/img/CAPTCHA.jpg">
 
-            <button class="rounded-md bg-[#088e8e] text-sm text-white w-1/2 mb-24"> <span class="text-center">Envoyer</span></button>
+            <button class="rounded-md bg-[#088e8e] text-sm text-white w-5/6 mb-24"> <span class="text-center">Envoyer</span></button>
             
         </form>
 

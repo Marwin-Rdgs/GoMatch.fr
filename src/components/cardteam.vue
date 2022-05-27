@@ -133,7 +133,7 @@ export default {
 }
 
 .cards .content .details h2 {
-  color: #fff;
+  color: #000000;
   font-size: 1.2em;
   font-weight: 500;
 }
@@ -141,7 +141,7 @@ export default {
 .cards .content .details h2 span {
   font-size: 1;
   font-weight: 400;
-  color: #fff;
+  color: #000000;
 }
 
 .social_icons {
