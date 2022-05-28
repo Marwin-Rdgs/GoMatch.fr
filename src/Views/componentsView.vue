@@ -28,21 +28,29 @@
 <!-- statut est présent, le terrains est déjà utilisé -->
 <!-- Joueur est indiqué, alors il y a X joueur sur le terrain -->
     <cardterrains
+    type='tennis'
     statut
     joueur= 3
     nom="test terrain 1"
     adress="18 rue Pasquarelli"
-    size="Football...(à modifier)"
     img="/public/terrains/city_hericourt.jpg"/>
 
 
 <!-- statut n'est pas indiqué, alors le terrains n'est pas occupé -->
 <!-- Joueur n'est pas indiqué, alors il n'y a 0 joueurs sur le terrains -->
     <cardterrains 
+    type='foot'
     nom="test terrain 2"
     adress="18 rue Feuvrier de merde"
-    size="Basket...(à modifier)"
     img="/public/terrains/construire-terrain-petanque.jpg"/>
+
+   <cardterrains
+   type='petanque'
+    statut
+    joueur= 9     
+    nom="test terrain 3"
+    adress="Aragorne Numéro 9"
+    img="/public/terrains/Reserver-un-court-de-tennis.png"/>
 
     </div>
 

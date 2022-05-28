@@ -1,7 +1,7 @@
 <template>
   <a :href="url">
   <figure class="m-4">
-    <img class="w-full rounded-t-lg" :src="img" alt="" />
+    <img class="w-full rounded-t-lg" :src="img" alt="Miniature du terrain" />
     <figcaption
       class="relative flex flex-col rounded-b-lg border-2 border-t-0 px-5 py-7"
     >
@@ -11,7 +11,7 @@
       </div>
       <hr class="my-2 border-t-2 border-indigo-100" />
       <div class="flex justify-between text-sm">
-        <div><size class="inline-block align-top" /> {{ size }}</div>
+      <component :is="sport[type]" class="inline-block align-top h-10" />
       </div>
       <div
         class="
@@ -32,10 +32,13 @@
 </template>  
 
 <script>
-import statut from '../components/icones/joueur_icone.vue'
+import statut from './icones/joueur_icone.vue';
+import foot from './icones/ballon_foot.vue';
+import petanque from "./icones/ballon_petanque.vue";
+import bascket from "./icones/ballon_basket.vue";
+import tennis from "./icones/ballon_tennis.vue";
 
 export default {
-  components: { statut },
 
   props: {
     statut: {
@@ -56,14 +59,24 @@ export default {
     img: {
       type: String,
     },
-    size: {
-      type: String,
-      default: "6x7.5 m²",
-    },
     url: {
       type: String,
       default: "/",
+    },
+    type:String,
+  },
+
+  data: function() {
+    return {
+      sport: {
+        "foot":foot,
+        "petanque":petanque,
+        "basket":bascket,
+        "tennis":tennis,
+      },      
     }
   },
+
+  components: { statut, foot, petanque, bascket, tennis }
 };
 </script>

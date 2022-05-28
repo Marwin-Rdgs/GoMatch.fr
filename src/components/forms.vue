@@ -8,11 +8,7 @@
 
             <input type="text" placeholder="Nom" class="rounded-md bg-white text-sm text-justify text-gray-500 mt-4">
 
-            <input type="text" placeholder="Email" class="rounded-md bg-white text-sm text-justify text-gray-500 mt-4">
-
-             <input type="text" placeholder="Message" class="rounded-md bg-white text-sm h-1/4 text-justify text-gray-500 mt-4 h-">
-
-           
+            <input type="text" placeholder="Email" class="rounded-md bg-white text-sm text-justify text-gray-500 mt-4">           
 
             <textarea name="" class="mt-4 rounded-md bg-white text-sm text-gray-500 h-1/4"> Message </textarea>
 
