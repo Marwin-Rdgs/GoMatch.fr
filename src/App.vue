@@ -10,7 +10,7 @@
     <RouterLink to="/contact"> Contact </RouterLink> |
     <RouterLink to="/profil"> Profil </RouterLink> |
     <RouterLink to="/profil"> Sport (pas définie) </RouterLink> |
-    <RouterLink to="/profil"> Party (pas définie) </RouterLink> |
+    <RouterLink to="/party"> Party (création où rejoindre) </RouterLink> |
 
     <RouterView />
     
