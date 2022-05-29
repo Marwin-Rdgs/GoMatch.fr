@@ -2,9 +2,9 @@
 
 <div class="flex justify-center my-10">
     <div class="grid grid-cols-3 relative">
-        <arrowback />
+        <arrowback class="w-32"/>
         <foot/>
-        <arrownext />
+        <arrownext class="w-32"/>
     </div>
 </div>
 
