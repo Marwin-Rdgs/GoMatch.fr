@@ -1,7 +1,7 @@
 <template>
   <a :href="url">
   <figure class="m-4">
-    <img class="w-full rounded-t-lg" :src="img" alt="Miniature du terrain" />
+    <img class="w-full rounded-t-lg h-72" :src="img" alt="Miniature du terrain" />
     <figcaption
       class="relative flex flex-col rounded-b-lg border-2 border-t-0 px-5 py-7"
     >

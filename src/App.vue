@@ -8,9 +8,9 @@
     <RouterLink to="/mentionslegales"> Mentions Legales</RouterLink> |
     <RouterLink to="/apropos"> À propos</RouterLink> |
     <RouterLink to="/contact"> Contact </RouterLink> |
-    <RouterLink to="/profil"> Profil </RouterLink> |
-    <RouterLink to="/profil"> Sport (pas définie) </RouterLink> |
-    <RouterLink to="/party"> Party (création où rejoindre) </RouterLink> |
+    <RouterLink to="/profil"> Profil (- Eliot) </RouterLink> |
+    <RouterLink to="/search"> Search Sport (En cours - Marwin) </RouterLink> |
+    <RouterLink to="/party"> Party (création où rejoindre - Théo) </RouterLink> |
 
     <RouterView />
     

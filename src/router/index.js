@@ -6,6 +6,7 @@ import aproposView from '../Views/aproposView.vue'
 import contactView from '../Views/contactView.vue'
 import profilView from '../Views/profilView.vue'
 import partyView from '../Views/partyView.vue'
+import searchView from '../Views/searchView.vue'
 
 const router = createRouter ({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,6 +18,7 @@ const router = createRouter ({
         {path: '/contact', name: 'contactView', component: contactView},
         {path: '/profil', name: 'profilView', component: profilView},
         {path: '/party', name: 'partyView', component: partyView},
+        {path: '/search', name: 'searchView', component: searchView},
     ]
 })
 
