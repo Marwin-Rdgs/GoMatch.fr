@@ -118,7 +118,7 @@ export default {
 <div class="screen w-full">
             <h1 class="title_minia font-impact text-2xl text-center"> <br> <br> GoMatch!</h1>
             <div class="container fw-bolder">
-                <p class="title_anim font-impact text-xl text-center lg:ml-36"> Go <br>
+                <p class="title_anim font-impact text-xl text-center lg:ml-4"> Go <br>
                 <span class="typed-text"></span><span class="cursor">&nbsp;Football</span>
                 </p>
                 <a href=#down><img src="../components/icones/arrow_down.svg" alt="Icône descendre" class="arrow_down py-9"></a>
@@ -179,6 +179,7 @@ hr { color:#6B7280; background-color:#6B7280; height:3px; border:0; }
     margin-top: 0px;
     background-image:url("/public/img/Minia.jpg");
     background-size: cover;
+    width: 100%;
     margin-bottom: 35px;
 }
 
