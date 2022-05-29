@@ -1,5 +1,6 @@
 <script>
 import sportindex from "../components/sportindex.vue"
+import pub from "../components/pub.vue"
 
 export default {
   name: "homeView",
@@ -11,7 +12,7 @@ export default {
   //       monteMot:true,
   //   }
   // },
-  components: { sportindex }
+  components: { sportindex, pub }
 };
 
 /*!
@@ -117,7 +118,7 @@ export default {
 <div class="screen w-full">
             <h1 class="title_minia font-impact text-2xl text-center"> <br> <br> GoMatch!</h1>
             <div class="container fw-bolder">
-                <p class="title_anim font-impact text-xl text-center"> Go <br>
+                <p class="title_anim font-impact text-xl text-center lg:ml-36"> Go <br>
                 <span class="typed-text"></span><span class="cursor">&nbsp;Football</span>
                 </p>
                 <a href=#down><img src="../components/icones/arrow_down.svg" alt="Icône descendre" class="arrow_down py-9"></a>
@@ -152,6 +153,8 @@ export default {
     txt="Tennisball"
     url="#" />
 
+    
+    <pub/>
 
 </template>
 
@@ -181,7 +184,7 @@ hr { color:#6B7280; background-color:#6B7280; height:3px; border:0; }
 
 .arrow_down {
     display: block;
-    margin-left: 700px;
+    margin-left: 780px;
 }
 
 .logo_gomatch {
