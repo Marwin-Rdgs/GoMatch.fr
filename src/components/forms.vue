@@ -1,16 +1,16 @@
 <template>
 
-    <div class="grid w-1/5 ml-auto mr-auto mt-10 py-10">
+    <div class="grid w-1/5 ml-auto mr-auto">
 
-        <form action="">
+        <form action="" class="grid-cols-1">
 
-            <input type="text" placeholder="Prénom" class="rounded-md bg-white text-sm text-justify text-gray-500 border-colors-[#088e8e]">
+            <input type="text" placeholder="Prénom" class="rounded-md bg-white text-sm text-justify text-gray-500 border-colors-[#088e8e] w-full">
 
-            <input type="text" placeholder="Nom" class="rounded-md bg-white text-sm text-justify text-gray-500 mt-4">
+            <input type="text" placeholder="Nom" class="rounded-md bg-white text-sm text-justify text-gray-500 mt-4 w-full">
 
-            <input type="text" placeholder="Email" class="rounded-md bg-white text-sm text-justify text-gray-500 mt-4">           
+            <input type="text" placeholder="Email" class="rounded-md bg-white text-sm text-justify text-gray-500 mt-4 w-full">           
 
-            <textarea name="" class="mt-4 rounded-md bg-white text-sm text-gray-500 h-1/4"> Message </textarea>
+            <textarea name="" class="mt-4 rounded-md bg-white text-sm text-gray-500 h-1/4 lg:w-full"> Message </textarea>
 
             <img src="/public/img/CAPTCHA.jpg">
 
