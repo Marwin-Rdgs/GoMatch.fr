@@ -3,7 +3,9 @@
 <div class="flex justify-center my-10">
     <div class="grid grid-cols-3 relative">
         <arrowback class="w-32"/>
-        <foot/>
+        <!-- Voir avec les profs (changer de sport avec les flèches également) -->
+        <!-- <component v-bind:is="types[foot]"/> -->
+        <foot />
         <arrownext class="w-32"/>
     </div>
 </div>
@@ -41,8 +43,10 @@
 
         <cardterrains
     type='foot'
-    nom="test terrain 5"
-    adress="2 rue des combes aux biches"
+    statut
+    joueur="11"
+    nom="test terrain 9"
+    adress="6 boulevards chez les gens"
     img="/public/terrains/citystade1.jpg"/>
 
         <cardterrains
@@ -68,7 +72,16 @@ import tennis from "../components/icones/perso_tennis.vue";
 
 export default {
   name: "searchView",
-
+  data: function() {
+    return {
+      types: {
+        foot, 
+        petanque,
+        basket ,
+        tennis  ,
+      }
+    }
+  },
   components: { pub, cardterrains, arrowback, arrownext, foot, petanque, basket, tennis }
 };
 </script>
