@@ -31,8 +31,37 @@
     </div>
     <pub/>
         <hr class="m-4 w-40 bg-black h-0.5"/>
-        <h3 class="text-lg font-bold">Rejoindre le terrain</h3>
+        <h3 class="text-lg font-bold ml-6">Rejoindre le terrain</h3>
+        <p class="text-xs ml-14 mt-3">Arrivé dans :</p>
+        <div class="grid grid-cols-3 mb-5 mt-3 ml-14 gap-5">
+        <button class="bg-white rounded-md w-20 text-center ">15 min</button>
+        <button class="bg-white rounded-md w-20 text-center ">30 min</button>
+        <button class="bg-white rounded-md w-20 text-center ">1h</button>
+        <button class="bg-white rounded-md w-20 text-center ">1h30</button>
+        <button class="bg-white rounded-md w-20 text-center ">2h</button>
+        </div>
 
+<div class="flex ml-14 mb-5 mt-3">
+        <p>Avec</p>
+        <input type="text" placeholder="..." class=" mx-1 rounded-md bg-white text-black text-center w-8">
+<p>personne(s)</p>
+</div>
+
+        <p class="text-xs ml-14 mt-3">Pour du :</p>
+        <div class="grid grid-cols-3 mt-3 mb-5 ml-14 gap-5">
+        <button class="bg-white rounded-md w-20 text-center ">Football</button>
+        <button class="bg-white rounded-md w-20 text-center ">Basketball</button>
+        </div>
+        
+        <p class="text-xs ml-14 mt-3">Fermer le terrain :</p>
+        <div class="grid grid-cols-3 mt-3 ml-14 mb-5  gap-5">
+        <button class="bg-white rounded-md w-20 text-center ">Oui</button>
+        <button class="bg-white rounded-md w-20 text-center ">Non</button>
+        </div>
+
+<div class="place-items-center">
+        <button class="bg-green text-white rounded-md w-44 h-11">Créer la partie</button>
+</div>
 </template>
 
 
