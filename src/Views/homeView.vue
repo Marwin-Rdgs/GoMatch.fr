@@ -177,7 +177,7 @@ hr { color:#6B7280; background-color:#6B7280; height:3px; border:0; }
 
 .screen {
     margin-top: 0px;
-    background-image:url("/public/img/Minia.jpg");
+    background-image:url("../assets/img/Minia.jpg");
     background-size: cover;
     width: 100%;
     margin-bottom: 35px;
@@ -216,7 +216,7 @@ hr { color:#6B7280; background-color:#6B7280; height:3px; border:0; }
 
     .screen {
         margin-top: 0px;
-        background-image:url("/public/img/minia-phone.png");
+        background-image:url("../assets/img/minia-phone.png");
         background-size: cover;
         margin-bottom: 35px;
     }

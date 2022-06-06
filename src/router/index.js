@@ -8,6 +8,7 @@ import profilView from '../Views/profilView.vue'
 import partyCreaView from '../Views/partyCreaView.vue'
 import searchView from '../Views/searchView.vue'
 import partyjoinView from '../Views/partyJoinView.vue'
+import loginView from '../Views/loginView.vue'
 
 const router = createRouter ({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -18,9 +19,10 @@ const router = createRouter ({
         {path: '/apropos', name: 'aproposView', component: aproposView},
         {path: '/contact', name: 'contactView', component: contactView},
         {path: '/profil', name: 'profilView', component: profilView},
-        {path: '/party', name: 'partyCreaView', component: partyCreaView},
+        {path: '/partycrea', name: 'partyCreaView', component: partyCreaView},
         {path: '/search', name: 'searchView', component: searchView},
         {path: '/partyjoin', name: 'partyjoinView', component: partyjoinView},
+        {path: '/login', name: 'loginView', component: loginView},
     ]
 })
 

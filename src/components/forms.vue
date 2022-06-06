@@ -12,7 +12,7 @@
 
             <textarea name="" class="mt-4 rounded-md bg-white text-sm text-gray-500 h-1/4 lg:w-full"> Message </textarea>
 
-            <img src="/public/img/CAPTCHA.jpg">
+            <img src="../assets/img/CAPTCHA.jpg">
 
             <button class="rounded-md bg-[#088e8e] text-sm text-white w-5/6 mb-24"> <span class="text-center">Envoyer</span></button>
             
