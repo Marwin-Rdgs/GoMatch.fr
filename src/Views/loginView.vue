@@ -54,7 +54,7 @@
 </template>
  
 <script>
-//import {emitter} from '../main.js'
+import {emitter} from '../main.js'
 import {
     getFirestore,   // Obtenir le Firestore
     collection,     // Utiliser une collection de documents
@@ -97,7 +97,7 @@ export default {
             .then((response) =>{
                 this.user = response.user;
                 console.log("user", this.user);
-                //emitter.emit('connectUser', {user: this.user});
+                emitter.emit('connectUser', {user: this.user});
                 this.message = "user connecté : " + this.user.email;
             })
             .catch((error)=>{
@@ -113,7 +113,7 @@ export default {
                     email:null,
                     password:null
                 };
-               // emitter.emit('deConnectUser', {user:this.user});
+               emitter.emit('deConnectUser', {user:this.user});
             })
             .catch(error=>{
                 console.log('erreur deconnexion', error);
