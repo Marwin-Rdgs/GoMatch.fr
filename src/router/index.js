@@ -9,6 +9,7 @@ import partyCreaView from '../Views/partyCreaView.vue'
 import searchView from '../Views/searchView.vue'
 import partyjoinView from '../Views/partyJoinView.vue'
 import loginView from '../Views/loginView.vue'
+import adminView from '../Views/adminView.vue'
 
 const router = createRouter ({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,6 +24,7 @@ const router = createRouter ({
         {path: '/search', name: 'searchView', component: searchView},
         {path: '/partyjoin', name: 'partyjoinView', component: partyjoinView},
         {path: '/login', name: 'loginView', component: loginView},
+        {path: '/admin', name: 'adminView', component: adminView},
     ]
 })
 
