@@ -5,7 +5,7 @@ import mentionslegalesView from '../Views/mentionslegalesView.vue'
 import aproposView from '../Views/aproposView.vue'
 import contactView from '../Views/contactView.vue'
 import profilView from '../Views/profilView.vue'
-import partyView from '../Views/partyView.vue'
+import partyCreaView from '../Views/partyCreaView.vue'
 import searchView from '../Views/searchView.vue'
 
 const router = createRouter ({
@@ -17,7 +17,7 @@ const router = createRouter ({
         {path: '/apropos', name: 'aproposView', component: aproposView},
         {path: '/contact', name: 'contactView', component: contactView},
         {path: '/profil', name: 'profilView', component: profilView},
-        {path: '/party', name: 'partyView', component: partyView},
+        {path: '/party', name: 'partyCreaView', component: partyCreaView},
         {path: '/search', name: 'searchView', component: searchView},
     ]
 })
