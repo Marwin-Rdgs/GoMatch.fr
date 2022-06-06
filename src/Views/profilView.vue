@@ -36,7 +36,7 @@
 
         <div class="ml-8">
                 <p class="ml-1">Biographie</p>
-                <input class="bg-white w-5/6 rounded-lg pb-20" placeholder="Bonjour à vous, je m’appelle Anthony Horritz, j’ai 22 ans et j’adore pratiquer un peu de sport lorsque je ne travaille pas pour mes études. J’aime beaucoup faire du Football et du Tennis mais mon sport préféré reste le Basketball…"/>
+                <input height="190" width="100" class="bg-white rounded-lg" placeholder="Bonjour à vous, je m’appelle Anthony Horritz, j’ai 22 ans et j’adore pratiquer un peu de sport lorsque je ne travaille pas pour mes études. J’aime beaucoup faire du Football et du Tennis mais mon sport préféré reste le Basketball…"/>
         </div>
 
         <hr class="my-6 mx-auto w-5/6 bg-black "/>
