@@ -36,7 +36,7 @@
 
         <div class="ml-8">
                 <p class="ml-1">Biographie</p>
-                <input height="190" width="100" class="bg-white rounded-lg" placeholder="Bonjour à vous, je m’appelle Anthony Horritz, j’ai 22 ans et j’adore pratiquer un peu de sport lorsque je ne travaille pas pour mes études. J’aime beaucoup faire du Football et du Tennis mais mon sport préféré reste le Basketball…"/>
+                <textarea name="bio" class="bg-white rounded-lg w-5/6">Bonjour à vous, je m’appelle Anthony Horritz, j’ai 22 ans et j’adore pratiquer un peu de sport lorsque je ne travaille pas pour mes études. J’aime beaucoup faire du Football et du Tennis mais mon sport préféré reste le Basketball…</textarea>
         </div>
 
         <hr class="my-6 mx-auto w-5/6 bg-black "/>
