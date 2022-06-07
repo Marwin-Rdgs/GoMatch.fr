@@ -59,11 +59,14 @@
                     <tr>
                         <td>
                           <form 
-                            v-for="terrain in filterByName" :key="terrain.nom_terrain" class="border-b-2 flex gap-x-4 w-full"> 
+                            v-for="terrain in filterByName" :key="terrain.nom_terrain" class="border-b-2 grid gap-x-4 w-full"> 
 
+                              <div class="flex gap-x-4">
                                 <span class="input-group-text">Nom</span>
                               <input type="text" class="border-2" v-model='terrain.nom_terrain' required />
+                              </div>
 
+                              <div class="flex gap-x-10">
                                 <!-- Ne Marche pas -->
                               <button type="button"  @click="updateterrain(terrain)" title="Modification">
                                 <p class="text-xs">Modification</p> 
@@ -74,6 +77,10 @@
                               <button class="btn btn-light" type="button" @click="deleteterrain(terrain)" title="Suppression">
                                <p class="text-xs">Supprimer</p>
                               </button>
+
+                              </div>
+
+                              <hr class="border-b-8"/>
 
                           </form>
                         </td>
