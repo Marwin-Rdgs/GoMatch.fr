@@ -6,10 +6,13 @@ import aproposView from '../Views/aproposView.vue'
 import contactView from '../Views/contactView.vue'
 import profilView from '../Views/profilView.vue'
 import partyCreaView from '../Views/partyCreaView.vue'
-import searchView from '../Views/searchView.vue'
 import partyjoinView from '../Views/partyJoinView.vue'
 import loginView from '../Views/loginView.vue'
 import adminView from '../Views/adminView.vue'
+import searchfootView from '../Views/searchFootView.vue'
+import searchbasketView from '../Views/searchBasketView.vue'
+import searchpetanqueView from '../Views/searchPetanqueView.vue'
+import searchtennisView from '../Views/searchTennisView.vue'
 
 const router = createRouter ({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,10 +24,13 @@ const router = createRouter ({
         {path: '/contact', name: 'contactView', component: contactView},
         {path: '/profil', name: 'profilView', component: profilView},
         {path: '/partycrea', name: 'partyCreaView', component: partyCreaView},
-        {path: '/search/:id', name: 'searchView', component: searchView},
         {path: '/partyjoin', name: 'partyjoinView', component: partyjoinView},
         {path: '/login', name: 'loginView', component: loginView},
         {path: '/admin', name: 'adminView', component: adminView},
+        {path: '/searchfoot', name: 'searchfootView', component: searchfootView},
+        {path: '/searchbasket', name: 'searchbasketView', component: searchbasketView},
+        {path: '/searchpetanque', name: 'searchpetanqueView', component: searchpetanqueView},
+        {path: '/searchtennis', name: 'searchtennisView', component: searchtennisView},
     ]
 })
 

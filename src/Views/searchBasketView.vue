@@ -2,11 +2,9 @@
 
 <div class="flex justify-center my-10">
     <div class="grid grid-cols-3 relative">
-        <arrowback class="w-32"/>
-        <!-- Voir avec les profs (changer de sport avec les flèches également) -->
-        <!-- <component v-bind:is="types[foot]"/> -->
-        <foot />
-        <arrownext class="w-32"/>
+        <RouterLink to="/searchfoot"><arrowback class="w-32"/></RouterLink>
+        <basket />
+        <RouterLink to="/searchtennis"><arrownext class="w-32"/></RouterLink>
     </div>
 </div>
 
@@ -65,23 +63,10 @@ import arrowback from "../components/icones/arrow_left.vue"
 import arrownext from "../components/icones/arrow_right.vue"
 import pub from "../components/pub.vue"
 
-import foot from "../components/icones/perso_football.vue";
-import petanque from "../components/icones/perso_petanque.vue";
 import basket from "../components/icones/perso_basket.vue";
-import tennis from "../components/icones/perso_tennis.vue";
 
 export default {
   name: "searchView",
-  data: function() {
-    return {
-      types: {
-        foot, 
-        petanque,
-        basket ,
-        tennis  ,
-      }
-    }
-  },
-  components: { pub, cardterrains, arrowback, arrownext, foot, petanque, basket, tennis }
+  components: { pub, cardterrains, arrowback, arrownext, basket }
 };
 </script>

@@ -129,28 +129,28 @@ export default {
             <sportindex 
     type="foot"
     txt="Football"
-    id="foot"/>
+    url="/searchfoot"/>
 
     <hr class="w-1/6 m-auto"/>
 
     <sportindex 
     type="petanque"
     txt="Pétanque"
-    id="petanque" />
+    url="/searchpetanque" />
 
     <hr class="w-1/6 m-auto">
 
     <sportindex 
     type="bascket"
     txt="Basketball"
-    id="basket" />
+    id="/searchbasket" />
 
     <hr class="w-1/6 m-auto">
 
     <sportindex 
     type="tennis"
     txt="Tennisball"
-    id="tennis" />
+    id="/searchtennis" />
 
     
     <pub/>
