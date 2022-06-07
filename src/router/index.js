@@ -21,7 +21,7 @@ const router = createRouter ({
         {path: '/contact', name: 'contactView', component: contactView},
         {path: '/profil', name: 'profilView', component: profilView},
         {path: '/partycrea', name: 'partyCreaView', component: partyCreaView},
-        {path: '/search', name: 'searchView', component: searchView},
+        {path: '/search/:id', name: 'searchView', component: searchView},
         {path: '/partyjoin', name: 'partyjoinView', component: partyjoinView},
         {path: '/login', name: 'loginView', component: loginView},
         {path: '/admin', name: 'adminView', component: adminView},

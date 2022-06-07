@@ -1,6 +1,6 @@
 <template>
 
-  <Routerlink :to="url">
+  <Routerlink :to="{name:'search', params: {id}}">
     <div class="flex justify-center">
       <div class="grid grid-cols-1 group h-32 relative">
         <component :is="types[type]" class="flex group-hover:scale-50 h-32 w-32 transition-transform duration-1000" />
@@ -19,9 +19,10 @@ import tennis from "./icones/perso_tennis.vue";
 
 export default {
   props: {
-      url: {
+    id: {
       type: String,
     },
+    
     txt: {
       type: String,
     },

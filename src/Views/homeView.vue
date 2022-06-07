@@ -124,34 +124,33 @@ export default {
                 <a href=#down><img src="../components/icones/arrow_down.svg" alt="Icône descendre" class="arrow_down py-9"></a>
             </div>
         </div>
-        <p class="text-center font-bold text-xs font-Open Sans">Choisissez votre sport : </p>
+        <p class="text-center font-bold text-xs font-Open Sans" id="down">Choisissez votre sport : </p>
 
             <sportindex 
     type="foot"
     txt="Football"
-    url="#"
-    id="down" />
+    id="foot"/>
 
     <hr class="w-1/6 m-auto"/>
 
     <sportindex 
     type="petanque"
     txt="Pétanque"
-    url="#" />
+    id="petanque" />
 
     <hr class="w-1/6 m-auto">
 
     <sportindex 
     type="bascket"
     txt="Basketball"
-    url="#" />
+    id="basket" />
 
     <hr class="w-1/6 m-auto">
 
     <sportindex 
     type="tennis"
     txt="Tennisball"
-    url="#" />
+    id="tennis" />
 
     
     <pub/>
