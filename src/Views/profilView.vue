@@ -7,7 +7,7 @@
     </div>
 
     <div class="flex">
-        <imageprofil class="m-4 hover:opacity-40 rounded-full hover:border-turquoise border-2 hover:bg-gray-500"> </imageprofil>
+        <profil class="m-4"/>
         <div>
             <div class="ml-2 mb-4">
                 <p class="ml-1">Prénom</p>
@@ -41,24 +41,6 @@
 
         <hr class="my-6 mx-auto w-5/6 bg-black "/>
 
-        <div>
-            <p class="ml-8">sport pratiqués</p>
-            <div class="bg-white flex gap-x-10 mx-auto rounded-lg w-5/6 justify-center">
-                <img
-        src="../components/icones/ballon_foot.png"
-        class="w-14 h-14 mt-2"/>
-
-                <img
-        src="../components/icones/ballon_tennis.png"
-        class="w-16 h-16 mt-2"/>
-
-                <img
-        src="../components/icones/ballon_basket.png"
-        class="w-14 h-14 mt-2"/>
-
-            </div>
-        </div>
-
         <hr class="my-6 mx-auto w-5/6 bg-black "/>
         <div>
             <p class="ml-8 pb-5">Activité Actuelle</p>
@@ -68,11 +50,12 @@
 </template>
 
 <script>
-import imageprofil from "../components/icones/imageprofil.vue"
 import ballontennis from "../components/icones/ballon_tennis.vue"
 import ballonfoot from "../components/icones/ballon_foot.vue"
 import ballonbasket from "../components/icones/ballon_basket.vue"
+import profil from '../components/icones/joueur_icone.vue';
+
 export default {
-     components: { imageprofil, ballontennis, ballonfoot, ballonbasket }
+     components: { profil, ballontennis, ballonfoot, ballonbasket }
 }
 </script>

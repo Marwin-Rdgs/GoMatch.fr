@@ -35,9 +35,11 @@
         <p class="text-xs">Liste des joueurs : </p>
         <!-- V-for => liste des joueurs -->
         <div class="flex bg-white w-9/12 rounded-md gap-x-10">
-                <img src="../components/icones/pp-nothing.png" alt="">
+                <profil/>
                 <p class="text-3xs ">6 rue du Rohan, 70400</p>
         </div>
+
+        
     </div>
         <hr class="m-4 w-40 bg-black h-0.5"/>
 
@@ -67,9 +69,10 @@
 <script >
 import joueur from "../components/icones/joueur_icone.vue"
 import pub from "../components/pub.vue"
+import profil from '../components/icones/joueur_icone.vue';
 
 export default {
   name: "componentsView",
-  components: { joueur, pub },
+  components: { joueur, pub, profil },
 };
 </script>
