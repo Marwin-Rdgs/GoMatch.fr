@@ -52,6 +52,15 @@
              <p class="text-center mt-3"> Vous êtes déjà dans une partie </p>
         </div>
 </div>
+
+<!-- Si party fermée -->
+<div class="flex justify-center pb-10">
+        <div class="bg-orange-500 text-white rounded-md w-44 h-11">
+             <p class="text-center mt-3"> La partie est fermée </p>
+        </div>
+</div>
+
+
 </template>
 
 
