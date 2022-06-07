@@ -7,7 +7,7 @@
     </div>
 
     <div class="flex">
-        <imageprofil class="m-4"> </imageprofil>
+        <imageprofil class="m-4 hover:opacity-40 rounded-full hover:border-turquoise border-2 hover:bg-gray-500"> </imageprofil>
         <div>
             <div class="ml-2 mb-4">
                 <p class="ml-1">Prénom</p>
