@@ -61,7 +61,7 @@
 
         <hr class="my-6 mx-auto w-5/6 bg-black "/>
         <div>
-            <p class="ml-8 pb-5">sport pratiqués</p>
+            <p class="ml-8 pb-5">Activité Actuelle</p>
         </div>
 
     </main>  
