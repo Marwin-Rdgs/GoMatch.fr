@@ -1,5 +1,5 @@
     <template>
-            <h5 class="border-b-4 text-center text-xl mb-10">Liste des Concerts</h5>
+            <h5 class="border-b-4 text-center text-xl mb-10">Liste des Terrains</h5>
 
 <!-- Partie Ajouter -->
     <div class="border-2 border-turquoise">   
@@ -26,8 +26,8 @@
                 <input type="text" class="border-2" v-model='img_terrain' required />
             </div>
 
-            <button type="button" @click='createterrain()' title="Création" class="border-2 border-turquoise rounded-full mb-2">
-                 <font-awesome-icon icon="fa-solid fa-plus" />
+            <button type="button" @click='createterrain()' title="Création" class="border-2 border-turquoise rounded-full mb-2 py-2 px-4 hover:bg-turquoise hover:text-white hover:scale-110">
+                 Créer
             </button>    
            </div>
         </form>
@@ -36,18 +36,18 @@
 
 <!-- Partie Actuel (Modification / Suppression & Filtrage) -->
 
-<div class="border-2 border-violet2 mt-10 mb-64">
+<div class="border-2 border-violet2 mt-10 pb-64">
             <table>
                 <thead>
                     <tr>                      
                         <th scope="col">
-                          <div class="flex gap-x-10 mb-4 border-b-2 border-r-2 border-turquoise">
-                              <h6 class="text-sm">Liste des Terrains actuels</h6>                         
+                          <div class="lg:flex gap-x-10 mb-4 border-b-2 border-r-2 border-turquoise">
+                              <h6 class="">Liste des Terrains actuels</h6>                         
                           <span class="flex gap-x-2">
                                   <span>Filtrage</span>
                                     <input type="text" class="border-2" v-model="filter" />
 
-                                <button type="button"  title="Filtrage">
+                                <button type="button"  title="Filtrage" class="text-xs">
                                   Filtrer
                                 </button>
                           </span>
@@ -59,20 +59,20 @@
                     <tr>
                         <td>
                           <form 
-                            v-for="terrain in filterByName" :key="terrain.nom_terrain" class="border-b-2 flex gap-x-4"> 
+                            v-for="terrain in filterByName" :key="terrain.nom_terrain" class="border-b-2 flex gap-x-4 w-full"> 
 
                                 <span class="input-group-text">Nom</span>
                               <input type="text" class="border-2" v-model='terrain.nom_terrain' required />
 
                                 <!-- Ne Marche pas -->
                               <button type="button"  @click="updateterrain(terrain)" title="Modification">
-                                Modification
+                                <p class="text-xs">Modification</p> 
                               </button>
 
 
                                 <!-- Ne marche pas -->
                               <button class="btn btn-light" type="button" @click="deleteterrain(terrain)" title="Suppression">
-                                Supprimer
+                               <p class="text-xs">Supprimer</p>
                               </button>
 
                           </form>
