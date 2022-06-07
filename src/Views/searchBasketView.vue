@@ -8,56 +8,45 @@
     </div>
 </div>
 
-<h1 class="text-center">Search Bar</h1>
+<div class="grid">
+<h1 class="text-center">Rechercher</h1>
+    <div class="flex justify-center">
+<input type="text" class="border-2 w-1/3" v-model="filter" />
+    </div>
+</div>
 
 <div class="grid lg:grid-cols-3 md:grid-cols-2 place-items-stretch place-self-center">
-    <cardterrains
-    type='foot'
-    statut
-    joueur= 3
-    nom="test terrain 1"
-    adress="1 rue de chez gomatch"
-    img="/public/terrains/city_hericourt.jpg"/>
+    <div  v-for="terrain in filterByName" :key="terrain.id">
+        <Routerlink to="/">
+            <cardterrains
+            type='basket'
+            statut
+            joueur= 3
+            :nom="terrain.nom_terrain"
+            :adress="terrain.adresse_terrain"
+            :img="terrain.img_terrain"/>
+        </Routerlink>
+    </div>
 
-        <cardterrains
-    type='foot'
-    nom="test terrain 1"
-    adress="1 rue de chez gomatch"
-    img="/public/terrains/stad-ado1.jpg"/>
-
-    <cardterrains
-    type='foot'
-    nom="test terrain 5"
-    adress="2 rue des combes aux biches"
-    img="/public/terrains/citystade1.jpg"/>
 
     <pub class="col-span-full"/>
-
-    <cardterrains
-    type='foot'
-    nom="test terrain 5"
-    adress="2 rue des combes aux biches"
-    img="/public/terrains/citystade1.jpg"/>
-
-        <cardterrains
-    type='foot'
-    statut
-    joueur="11"
-    nom="test terrain 9"
-    adress="6 boulevards chez les gens"
-    img="/public/terrains/citystade1.jpg"/>
-
-        <cardterrains
-    type='foot'
-    nom="test terrain 5"
-    adress="2 rue des combes aux biches"
-    img="/public/terrains/citystade1.jpg"/>
 
     </div>
     
 </template>
 
 <script>
+// Bibliothèque Firestore : Import des fonctions
+import { 
+    getFirestore, 
+    collection, 
+    doc, 
+    getDocs, 
+    addDoc, 
+    updateDoc, 
+    deleteDoc, 
+    onSnapshot } from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js'
+
 import cardterrains from "../components/cardterrains.vue"
 import arrowback from "../components/icones/arrow_left.vue"
 import arrownext from "../components/icones/arrow_right.vue"
@@ -67,6 +56,78 @@ import basket from "../components/icones/perso_basket.vue";
 
 export default {
   name: "searchView",
+
+  
+  data() {
+    return {
+      listeterrain:[],  // Liste des pays - collection pays Firebase
+      filter:''
+    }
+  },
+
+
+  computed:{
+    // Tri des pays par nom en ordre croissant
+    orderByName:function(){
+      // Parcours et tri des pays 2 à 2
+      return this.listeterrain.sort(function(a,b){
+        // Si le nom du pays est avant on retourne -1
+        if(a.nom_terrain < b.nom_terrain) return -1;
+        // Si le nom du pays est après on retourne 1
+        if(a.nom_terrain > b.nom_terrain) return 1;
+        // Sinon ni avant ni après (homonyme) on retourne 0
+        return 0;
+      });
+    },
+    // Filtrage de la propriété calculée de tri
+    filterByName:function(){
+      // On effectue le fitrage seulement si le filtre est rnseigné
+      if(this.filter.length > 0){
+        // On récupère le filtre saisi en minuscule (on évite les majuscules)
+        let filter = this.filter.toLowerCase();
+        // Filtrage de la propriété calculée de tri
+        return this.orderByName.filter(function(terrain){
+          // On ne renvoie que les pays dont le nom contient 
+          // la chaine de caractère du filtre
+          return terrain.nom_terrain.toLowerCase().includes(filter);
+        })
+      }else{
+        // Si le filtre n'est pas saisi
+        // On renvoie l'intégralité de la liste triée
+        return this.orderByName;
+      }
+    }
+  },
+
+
+mounted(){
+    // Appel de la liste des concerts
+    this.getterrain();
+},
+
+methods:{
+    async getterrain(){
+        // Obtenir Firestore
+        const firestore = getFirestore();
+        
+        // Base de données (collection) document artistes_fr
+        const dbterrain = collection(firestore, "terrainbasket");
+        
+        // Obtenir tous les documents de la collection concert
+        // await pour attendre l'obtention des résultats
+        const query = await getDocs(dbterrain);
+        query.forEach((doc) => {
+            let terrain = {
+                id_terrain : doc.id,
+                nom_terrain : doc.data().nom_terrain,
+                img_artiste : doc.data().img_terrain,
+                ville_terrain : doc.data().ville_terrain,
+                adresse_terrain : doc.data().adresse_terrain,
+            };
+            this.listeterrain.push(terrain)
+        });
+    },
+},
   components: { pub, cardterrains, arrowback, arrownext, basket }
 };
 </script>
