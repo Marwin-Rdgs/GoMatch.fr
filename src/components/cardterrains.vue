@@ -1,5 +1,5 @@
 <template>
-  <a :href="url">
+  <Routerlink :to="url">
   <figure class="m-4">
     <img class="w-full rounded-t-lg h-72" :src="img" alt="Miniature du terrain" />
     <figcaption
@@ -28,7 +28,7 @@
       </div>
     </figcaption>
   </figure>
-  </a>
+  </Routerlink>
 </template>  
 
 <script>
