@@ -20,8 +20,8 @@
         <Routerlink to="/">
             <cardterrains
             type='tennis'
-            statut
-            joueur= 3
+            :statut="terrain.statut_terrain"
+            :id="terrain.id_terrain"
             :nom="terrain.nom_terrain"
             :adress="terrain.adresse_terrain"
             :img="terrain.img_terrain"/>
@@ -122,6 +122,7 @@ methods:{
                 img_terrain : doc.data().img_terrain,
                 ville_terrain : doc.data().ville_terrain,
                 adresse_terrain : doc.data().adresse_terrain,
+                statut_terrain : doc.data().statut_terrain,
             };
             this.listeterrain.push(terrain)
         });

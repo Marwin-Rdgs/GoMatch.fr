@@ -12,9 +12,15 @@
       <hr class="my-2 border-t-2 border-indigo-100" />
       <div class="flex justify-between text-sm">
       <component :is="sport[type]" class="inline-block align-top h-10" />
-      <RouterLink :to="url"> <!-- {name:'partyCreaView', params: {id}} -->
+
+      <RouterLink :to="{name:'partyJoinView', params: {id}}" v-if="statut"> <!-- {name:'partyCreaView', params: {id}} -->
         <button class="border-turquoise border-2 p-2 rounded-full hover:bg-turquoise hover:text-white hover:border-gray-400">Rejoindre</button>
         </RouterLink>
+
+      <RouterLink :to="{name:'partyCreaView', params: {id}}" v-if="!statut"> <!-- {name:'partyCreaView', params: {id}} -->
+        <button class="border-turquoise border-2 p-2 rounded-full hover:bg-turquoise hover:text-white hover:border-gray-400">Créer</button>
+        </RouterLink>
+
       </div>
       <div
         class="
@@ -26,7 +32,7 @@
           w-12
         "
       >
-        <p>{{ joueur }}</p>
+        <!-- <p>{{ joueur }}</p> -->
         <statut :class="{ 'fill-white': !statut }" />
       </div>
     </figcaption>
@@ -65,6 +71,9 @@ export default {
     url: {
       type: String,
       default: "/",
+    },
+    id:{
+      type: String,
     },
     type:String,
   },

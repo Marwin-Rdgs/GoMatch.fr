@@ -36,7 +36,7 @@
         <!-- V-for => liste des joueurs -->
         <div class="flex bg-white w-9/12 rounded-md gap-x-10">
                 <profil/>
-                <p class="text-3xs ">6 rue du Rohan, 70400</p>
+                <p class="text-3xs mt-2">Joueur 1</p>
         </div>
 
         
