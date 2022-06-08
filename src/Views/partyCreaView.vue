@@ -2,7 +2,7 @@
 <img src="/terrains/citystade1.jpg" class="w-11/12 m-4 rounded-xl">
 <div class="m-3 grid grid-cols-2">
     <h2 class="font-bold text-xl">Ville : Montbéliard</h2>
-<div class="ml-5"><joueur/>
+<div class="ml-5"><joueur class="fill-white"/>
 <p class="text-3xs">Actuellement</p>
 <p class="bg-green w-fit rounded-md text-white text-3xs">0 personne</p>
 </div>
@@ -31,14 +31,11 @@
     </div>
     <pub/>
         <hr class="m-4 w-40 bg-black h-0.5"/>
-        <h3 class="text-lg font-bold ml-6">Rejoindre le terrain</h3>
+        <h3 class="text-lg font-bold ml-6">Créer la partie</h3>
         <p class="text-xs ml-14 mt-3">Arrivé dans :</p>
-        <div class="grid grid-cols-3 mb-5 mt-3 ml-14 gap-5">
-        <button class="bg-white rounded-md w-20 text-center focus:bg-green focus:text-white">15 min</button>
-        <button class="bg-white rounded-md w-20 text-center focus:bg-green focus:text-white">30 min</button>
-        <button class="bg-white rounded-md w-20 text-center focus:bg-green focus:text-white">1h</button>
-        <button class="bg-white rounded-md w-20 text-center focus:bg-green focus:text-white">1h30</button>
-        <button class="bg-white rounded-md w-20 text-center focus:bg-green focus:text-white">2h</button>
+        <div class="flex mb-5 mt-3 ml-14">
+        <input type="text" class="bg-white rounded-md w-24 focus:bg-green focus:text-white" placeholder="15 / 45 / 120">min
+
         </div>
 
 <div class="flex ml-14 mb-5 mt-3">
@@ -48,15 +45,15 @@
 </div>
 
         <p class="text-xs ml-14 mt-3">Pour du :</p>
-        <div class="grid grid-cols-3 mt-3 mb-5 ml-14 gap-5">
-        <button class="bg-white rounded-md w-20 text-center focus:bg-green focus:text-white">Football</button>
-        <button class="bg-white rounded-md w-20 text-center focus:bg-green focus:text-white">Basketball</button>
+        <div class="grid grid-cols-3 mt-3 mb-5 ml-14 gap-5 group">
+        <input type="text" class="bg-white rounded-md w-72 focus:bg-green focus:text-white" placeholder="Football / Basketball / Pétanque / Tennis">
         </div>
         
+        <div class="flex">
         <p class="text-xs ml-14 mt-3">Fermer le terrain :</p>
-        <div class="grid grid-cols-3 mt-3 ml-14 mb-5  gap-5">
-        <button class="bg-white rounded-md w-20 text-center focus:bg-orange-400 focus:text-white">Oui</button>
-        <button class="bg-white rounded-md w-20 text-center focus:bg-green focus:text-white">Non</button>
+        <div class="mt-3 ml-14 mb-5  gap-5">
+        <input type="checkbox" placeholder="..." class="bg-white rounded-md w-20 text-center focus:bg-orange-400 focus:text-white">
+        </div>
         </div>
 
 <div class="flex justify-center pb-10">
