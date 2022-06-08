@@ -121,7 +121,7 @@ methods:{
             let terrain = {
                 id_terrain : doc.id,
                 nom_terrain : doc.data().nom_terrain,
-                img_artiste : doc.data().img_terrain,
+                img_terrain : doc.data().img_terrain,
                 ville_terrain : doc.data().ville_terrain,
                 adresse_terrain : doc.data().adresse_terrain,
             };

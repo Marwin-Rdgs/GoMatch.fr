@@ -1,5 +1,5 @@
 <template>
-  <Routerlink :to="url">
+
   <figure class="m-4">
     <img class="w-full rounded-t-lg h-72" :src="img" alt="Miniature du terrain" />
     <figcaption
@@ -12,6 +12,9 @@
       <hr class="my-2 border-t-2 border-indigo-100" />
       <div class="flex justify-between text-sm">
       <component :is="sport[type]" class="inline-block align-top h-10" />
+      <RouterLink :to="url"> <!-- {name:'partyCreaView', params: {id}} -->
+        <button class="border-turquoise border-2 p-2 rounded-full hover:bg-turquoise hover:text-white hover:border-gray-400">Rejoindre</button>
+        </RouterLink>
       </div>
       <div
         class="
@@ -28,7 +31,7 @@
       </div>
     </figcaption>
   </figure>
-  </Routerlink>
+  
 </template>  
 
 <script>

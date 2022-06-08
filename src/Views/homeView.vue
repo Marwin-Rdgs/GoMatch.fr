@@ -143,14 +143,14 @@ export default {
     <sportindex 
     type="bascket"
     txt="Basketball"
-    id="/searchbasket" />
+    url="/searchbasket" />
 
     <hr class="w-1/6 m-auto">
 
     <sportindex 
     type="tennis"
     txt="Tennisball"
-    id="/searchtennis" />
+    url="/searchtennis" />
 
     
     <pub/>

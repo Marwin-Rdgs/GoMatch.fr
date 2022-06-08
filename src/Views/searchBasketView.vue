@@ -17,15 +17,16 @@
 
 <div class="grid lg:grid-cols-3 md:grid-cols-2 place-items-stretch place-self-center">
     <div  v-for="terrain in filterByName" :key="terrain.id">
-        <Routerlink to="/">
+        
             <cardterrains
             type='basket'
             statut
             joueur= 3
             :nom="terrain.nom_terrain"
             :adress="terrain.adresse_terrain"
-            :img="terrain.img_terrain"/>
-        </Routerlink>
+            :img="terrain.img_terrain"
+            :id="terrain.id_terrain"/>
+
     </div>
 
 
@@ -120,7 +121,7 @@ methods:{
             let terrain = {
                 id_terrain : doc.id,
                 nom_terrain : doc.data().nom_terrain,
-                img_artiste : doc.data().img_terrain,
+                img_terrain : doc.data().img_terrain,
                 ville_terrain : doc.data().ville_terrain,
                 adresse_terrain : doc.data().adresse_terrain,
             };
