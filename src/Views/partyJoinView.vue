@@ -65,7 +65,7 @@
 <script >
 import joueur from "../components/icones/joueur_icone.vue"
 import pub from "../components/pub.vue"
-import profil from '../components/icones/joueur_icone.vue';
+import profil from '../components/icones/profil.vue';
 
 export default {
   name: "componentsView",
