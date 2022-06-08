@@ -4,7 +4,7 @@
     <h2 class="font-bold text-xl">Ville : Héricourt</h2>
 <div class="ml-5"><joueur/>
 <p class="text-3xs">Actuellement</p>
-<p class="bg-turquoise w-fit rounded-md text-white text-3xs p-1">5 personne</p>
+<p class="bg-turquoise w-fit rounded-md text-white text-3xs p-1">5 personne(s)</p>
 </div>
 </div>
     <hr class="m-4 w-40 bg-black h-0.5"/>
@@ -17,12 +17,8 @@
         <hr class="m-4 w-40 bg-black h-0.5"/>
         <h3 class="text-lg font-bold ml-6">Rejoindre le terrain</h3>
         <p class="text-xs ml-14 mt-3">Arrivé dans :</p>
-        <div class="grid grid-cols-3 mb-5 mt-3 ml-14 gap-5">
-        <button class="bg-white rounded-md w-20 text-center focus:bg-green focus:text-white">15 min</button>
-        <button class="bg-white rounded-md w-20 text-center focus:bg-green focus:text-white">30 min</button>
-        <button class="bg-white rounded-md w-20 text-center focus:bg-green focus:text-white">1h</button>
-        <button class="bg-white rounded-md w-20 text-center focus:bg-green focus:text-white">1h30</button>
-        <button class="bg-white rounded-md w-20 text-center focus:bg-green focus:text-white">2h</button>
+        <div class="flex mb-5 mt-3 ml-14">
+<input type="text" class="bg-white rounded-md w-24 focus:bg-green focus:text-white" placeholder="15 / 45 / 120">min
         </div>
 
 <div class="flex ml-14 mb-5 mt-3">
@@ -32,11 +28,11 @@
 </div>
 
     <div class="m-4">
-        <p class="text-xs">Liste des joueurs : </p>
+        <p class="text-xs">Créateur de la partie : </p>
         <!-- V-for => liste des joueurs -->
         <div class="flex bg-white w-9/12 rounded-md gap-x-10">
                 <profil/>
-                <p class="text-3xs mt-2">Joueur 1</p>
+                <p class="text-3xs mt-2">Joueur X</p>
         </div>
 
         
