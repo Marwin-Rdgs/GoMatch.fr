@@ -18,7 +18,6 @@
 <div class="grid lg:grid-cols-3 md:grid-cols-2 place-items-stretch place-self-center">
 
     <div  v-for="terrain in filterByName" :key="terrain.id">
-        <Routerlink to="/">
             <cardterrains
             type='foot'
             :statut="terrain.statut_terrain"
@@ -26,7 +25,6 @@
             :nom="terrain.nom_terrain"
             :adress="terrain.adresse_terrain"
             :img="terrain.img_terrain"/>
-        </Routerlink>
     </div>
 
 

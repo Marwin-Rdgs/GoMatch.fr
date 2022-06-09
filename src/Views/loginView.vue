@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-12 px-5 grid grid-cols-1 lg:grid-cols-2 gap-20 relative mb-20">
+    <div class="mt-12 px-5 grid grid-cols-1 lg:grid-cols-2 gap-20 relative pb-72">
         <div>
             <form class="grid grid-cols-[minmax(max-content,8rem)_minmax(10rem,35rem)] gap-1" @submit.prevent="onCnx">
             <fieldset class="contents">
@@ -15,7 +15,7 @@
              
             </fieldset>
           </form>
-          <p class="w-full text-center py-3 bg-turquoise bg-opacity-60 rounded-sm mt-5 text-black">{{message}}</p>
+          <!-- <p class="w-full text-center py-3 bg-turquoise bg-opacity-60 rounded-sm mt-5 text-black">{{message}}</p> -->
         </div>
         <div>
             <!-- L'inscription ne rajoute aucune données dans la Database où l'Authentification -->
@@ -36,20 +36,6 @@
            
         </div>
     </div>
-
-<div class="grid grid-cols-2">
-    <div class="text-center">
-        <h2>Compte Admin</h2>
-        <p>mail : admin@gmail.com</p>
-        <p>root123</p>
-    </div>
-
-    <div class="text-center">
-        <h2>Compte Non-Admin</h2>
-        <p>mail : test@gmail.com</p>
-        <p>password123</p>
-    </div>
-</div>
 
 </template>
  

@@ -57,7 +57,7 @@
         </div>
 
 <div class="flex justify-center pb-10"  @click='createparty()' title="Création">
-        <button class="bg-green text-white rounded-md w-44 h-11">Créer la partie</button>
+        <RouterLink to="/profil"><button class="bg-green text-white rounded-md w-44 h-11">Créer la partie</button></RouterLink>
 </div>
 </template>
 

@@ -2,10 +2,10 @@
   <div class="bg-white w-full">
     <div class="flex items-center">
     <RouterLink to="/">
-      <img src="./icones/logo_gomatchh.svg" alt="" class="">
+      <img src="./icones/logo_gomatchh.svg" alt="">
     </RouterLink>
       <h1 class="text-3xl font-impact text-center flex-none w-10/12"><RouterLink to="/">GoMatch</RouterLink></h1>
-      <RouterLink to="/profil" class="contents">
+      <RouterLink to="/login" class="contents">
         <profil class="flex-none w-1/12 hover:fill-white"/>
       </RouterLink>
       <div  v-if="isAdmin">

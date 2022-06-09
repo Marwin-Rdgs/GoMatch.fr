@@ -1,16 +1,16 @@
 <template>
-<img src="/terrains/city_hericourt.jpg" class="w-11/12 m-4 rounded-xl">
+<img src="https://cdn-s-www.estrepublicain.fr/images/16300B08-DF5E-4363-9B15-46E530BCB7E9/NW_listE/les-jeunes-herimoncourtois-sont-ravis-ils-attendaient-avec-impatience-un-endroit-ou-se-reunir-et-partager-des-parties-de-ballon-au-city-stade-on-peut-pratiquer-le-football-le-basket-et-le-handball-photo-er-1600442383.jpg" class="w-11/12 m-4 rounded-xl">
 <div class="m-3 grid grid-cols-2">
     <h2 class="font-bold text-xl">Ville : Héricourt</h2>
 <div class="ml-5"><joueur/>
 <p class="text-3xs">Actuellement</p>
-<p class="bg-turquoise w-fit rounded-md text-white text-3xs p-1">5 personne(s)</p>
+<p class="bg-turquoise w-fit rounded-md text-white text-3xs p-1">2 personne(s)</p>
 </div>
 </div>
     <hr class="m-4 w-40 bg-black h-0.5"/>
     <div class="m-4">
         <p class="text-4xs">Adresse : </p>
-    <p class="text-3xs bg-white w-9/12 rounded-md">6 rue du Rohan, 70400</p>
+    <p class="text-3xs bg-white w-9/12 rounded-md">1 Imp. André Schoenenberger</p>
     </div>
         <hr class="m-4 w-40 bg-black h-0.5"/>
     <pub/>
@@ -32,30 +32,19 @@
         <!-- V-for => liste des joueurs -->
         <div class="flex bg-white w-9/12 rounded-md gap-x-10">
                 <profil/>
-                <p class="text-3xs mt-2">Joueur X</p>
+                <p class="text-3xs mt-2">Anthony Horritz</p>
         </div>
 
         
     </div>
         <hr class="m-4 w-40 bg-black h-0.5"/>
 
-        
-<div class="flex justify-center pb-10">
-        <button class="bg-green text-white rounded-md w-44 h-11">Rejoindre la partie</button>
-</div>
 
 <!-- Si joueur déjà dans la partie -->
 <div class="flex justify-center pb-10">
-        <div class="bg-red-600 text-white rounded-md w-44 h-11 text-4xs">
-             <p class="text-center mt-3"> Vous êtes déjà dans une partie </p>
-        </div>
-</div>
-
-<!-- Si party fermée -->
-<div class="flex justify-center pb-10">
-        <div class="bg-orange-500 text-white rounded-md w-44 h-11">
-             <p class="text-center mt-3"> La partie est fermée </p>
-        </div>
+        <button class="bg-red-600 text-white rounded-md w-44 h-11 text-4xs">
+             <p class="text-center"> Supprimer la partie </p>
+        </button>
 </div>
 
 

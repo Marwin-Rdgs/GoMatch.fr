@@ -3,23 +3,6 @@
 
     <header1 />
 
-    <RouterLink to="/components">Liste des composants</RouterLink> |
-    <RouterLink to="/"> Home</RouterLink> |
-    <RouterLink to="/mentionslegales"> Mentions Legales</RouterLink> |
-    <RouterLink to="/apropos"> À propos</RouterLink> |
-    <RouterLink to="/contact"> Contact </RouterLink> | <br />
-
-
-    <RouterLink to="/searchfoot"> Search Foot (En cours - Marwin) </RouterLink> |
-    <RouterLink to="/searchbasket"> Search Basket (En cours - Marwin) </RouterLink> |
-    <RouterLink to="/searchtennis"> Search Tennis (En cours - Marwin) </RouterLink> |
-    <RouterLink to="/searchpetanque"> Search Petanque (En cours - Marwin) </RouterLink> | <br />
-
-    <RouterLink to="/partycrea"> Party (création - Théo) </RouterLink> |
-    <RouterLink to="/partyjoin"> Party (rejoindre - Eliot) </RouterLink> |
-    <RouterLink to="/login"> login (en cours - Marwin) </RouterLink> |
-    <RouterLink to="/profil"> Profil </RouterLink> | 
-
     <RouterView />
     
 
