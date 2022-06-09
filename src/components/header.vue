@@ -6,6 +6,10 @@
       <RouterLink to="/profil" class="contents">
         <profil class="flex-none w-1/12 hover:fill-white"/>
       </RouterLink>
+      <!-- V-if="IsAdmin" -->
+      <RouterLink to="/admin" class="contents">
+        <img src="./icones/settings.svg" class="flex-none w-1/12 lg:scale-50 hover:animate-pulse"/>
+      </RouterLink>
     </div>
   </div>
 </template>
