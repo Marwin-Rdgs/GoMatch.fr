@@ -1,5 +1,5 @@
 <template>
-<img :src="terrain.img_terrain" class="w-11/12 m-4 rounded-xl">
+<img src="https://cdn-s-www.estrepublicain.fr/images/16300B08-DF5E-4363-9B15-46E530BCB7E9/NW_listE/les-jeunes-herimoncourtois-sont-ravis-ils-attendaient-avec-impatience-un-endroit-ou-se-reunir-et-partager-des-parties-de-ballon-au-city-stade-on-peut-pratiquer-le-football-le-basket-et-le-handball-photo-er-1600442383.jpg" class="w-11/12 m-4 rounded-xl">
 <div class="m-3 grid grid-cols-2">
     <h2 class="font-bold text-xl">Ville : Montbéliard</h2>
 <div class="ml-5"><joueur class="fill-white"/>
