@@ -22,7 +22,7 @@ import mitt from 'mitt';
   };
 
   // Initialize Firebase
-const FireApp = initializeApp(firebaseConfig);
+const appFirebase = initializeApp(firebaseConfig);
 
 const app = createApp(App)
 
@@ -30,6 +30,7 @@ const app = createApp(App)
 export const emitter = mitt();
 // créer l'émetteur comme propriété globale
 // de l'application
+
 app.config.globalProperties.emitter = emitter;
 
 app.use(router)
