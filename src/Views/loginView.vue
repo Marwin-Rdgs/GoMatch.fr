@@ -9,7 +9,7 @@
               <label >Mot de passe : </label>
               <input class="rounded-sm border-2 text-black" type="password" v-model="user.password" required/>
              
-                  <button type="submit" class="border-2 rounded-full hover:bg-turquoise hover:text-white hover:border-gray-200 p-2 mt-4">Se Connecter</button>
+                 <RouterLink to="/"> <button type="submit" class="border-2 rounded-full hover:bg-turquoise hover:text-white hover:border-gray-200 p-2 mt-4">Se Connecter</button></RouterLink>
                   <button type="button" @click="onDcnx()" class="border-2 rounded-full hover:bg-turquoise hover:text-white hover:border-gray-200 p-2 mt-4">Se Déconnecter</button>
              
              
